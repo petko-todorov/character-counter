@@ -1,7 +1,9 @@
+import { ThemeToggle } from './components/ThemeToggle';
+
 function App() {
     return (
         <>
-            <h1 className="text-3xl text-red-800 font-bold underline">Hello</h1>
+            <ThemeToggle />
         </>
     );
 }
