@@ -1,10 +1,10 @@
 import { Theme } from '@radix-ui/themes';
-import { useThemeStore } from '../store/useThemeStore';
+import { useStore } from '../store/useStore';
 import { useEffect } from 'react';
 
 export const ThemeWrapper = ({ children }) => {
-    const isDark = useThemeStore((state) => state.isDark);
-    const setDark = useThemeStore((state) => state.setDark);
+    const isDark = useStore((state) => state.isDark);
+    const setDark = useStore((state) => state.setDark);
 
     useEffect(() => {
         document.documentElement.classList.toggle('dark', isDark);
