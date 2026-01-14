@@ -1,5 +1,5 @@
 import { Button } from '@radix-ui/themes';
-import { useThemeStore } from '../stores/useThemeStore';
+import { useThemeStore } from '../store/useThemeStore';
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
 export function ThemeToggle() {
