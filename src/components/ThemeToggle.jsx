@@ -7,7 +7,7 @@ export function ThemeToggle() {
     const toggleTheme = useStore((state) => state.toggleTheme);
 
     return (
-        <Button onClick={toggleTheme}>
+        <Button size="3" onClick={toggleTheme}>
             {isDark ? <SunIcon /> : <MoonIcon />}
         </Button>
     );
