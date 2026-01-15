@@ -19,5 +19,5 @@ export const ThemeWrapper = ({ children }) => {
         return () => mediaQuery.removeEventListener('change', handleChange);
     }, [setDark]);
 
-    return <Theme accentColor={isDark ? 'red' : 'blue'}>{children}</Theme>;
+    return <Theme accentColor={isDark ? 'gray' : 'indigo'}>{children}</Theme>;
 };
