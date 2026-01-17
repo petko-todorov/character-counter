@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useStore } from '../../store/useStore';
 import StatCard from './StatCard';
 
@@ -13,14 +14,16 @@ const StatsBoard = () => {
     const setTotalCharacters = useStore((state) => state.setTotalCharacters);
     const setCleanEnteredText = useStore((state) => state.setCleanEnteredText);
 
-    const cleanLength = enteredText.replace(/\s+/g, '').length;
-    setTotalCharacters(cleanLength);
-    setCleanEnteredText(enteredText.replace(/\s+/g, ''));
-
     const wordsCount = (enteredText.match(/[\p{L}0-9_]+/gu) || []).length;
     const sentencesCount = enteredText
         .split(/[.!?]+/)
         .filter((segment) => /\w/.test(segment)).length;
+
+    useEffect(() => {
+        const cleanLength = enteredText.replace(/\s+/g, '').length;
+        setTotalCharacters(cleanLength);
+        setCleanEnteredText(enteredText.replace(/\s+/g, ''));
+    }, [enteredText]);
 
     return (
         <>
