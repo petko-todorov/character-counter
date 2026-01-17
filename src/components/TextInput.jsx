@@ -9,7 +9,7 @@ const TextInput = () => {
                 onChange={(e) =>
                     useStore.getState().setEnteredText(e.target.value)
                 }
-                className="h-66"
+                className="h-50"
                 size="3"
             />
         </>
