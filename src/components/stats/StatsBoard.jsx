@@ -13,6 +13,7 @@ const StatsBoard = () => {
     const totalCharacters = useStore((state) => state.totalCharacters);
     const setTotalCharacters = useStore((state) => state.setTotalCharacters);
     const setCleanEnteredText = useStore((state) => state.setCleanEnteredText);
+    const includeSpaces = useStore((state) => state.includeSpaces);
 
     const wordsCount = (enteredText.match(/[\p{L}0-9_]+/gu) || []).length;
     const sentencesCount = enteredText
@@ -20,10 +21,15 @@ const StatsBoard = () => {
         .filter((segment) => /\w/.test(segment)).length;
 
     useEffect(() => {
-        const cleanLength = enteredText.replace(/\s+/g, '').length;
-        setTotalCharacters(cleanLength);
-        setCleanEnteredText(enteredText.replace(/\s+/g, ''));
-    }, [enteredText]);
+        if (!includeSpaces) {
+            const cleanLength = enteredText.replace(/\s+/g, '').length;
+            setTotalCharacters(cleanLength);
+            setCleanEnteredText(enteredText.replace(/\s+/g, ''));
+        } else {
+            setTotalCharacters(enteredText.length);
+            setCleanEnteredText(enteredText);
+        }
+    }, [enteredText, includeSpaces]);
 
     return (
         <>
