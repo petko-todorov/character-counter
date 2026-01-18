@@ -1,3 +1,4 @@
+import ApproximateReadingTime from './components/ApproximateReadingTime';
 import Header from './components/Header';
 import IncludeSpaces from './components/IncludeSpaces';
 import LetterDensity from './components/LetterDensity';
@@ -16,9 +17,10 @@ function App() {
 
                 <TextInput />
 
-                <br />
-
-                <IncludeSpaces />
+                <div className="flex justify-between mt-4">
+                    <IncludeSpaces />
+                    <ApproximateReadingTime />
+                </div>
 
                 <br />
                 <br />
