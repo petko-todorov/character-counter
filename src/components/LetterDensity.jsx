@@ -19,7 +19,12 @@ const LetterDensity = () => {
         (a, b) => b[1] - a[1] || a[0] - b[0],
     );
 
-    if (totalCharacters === 0) return <Text color="gray">No data yet...</Text>;
+    if (totalCharacters === 0)
+        return (
+            <Text color="gray">
+                No characters found. Start typing to see letter density.
+            </Text>
+        );
 
     return (
         <>
