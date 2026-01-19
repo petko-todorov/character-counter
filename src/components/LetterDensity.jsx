@@ -33,18 +33,16 @@ const LetterDensity = () => {
                 const percentage = ((count / totalCharacters) * 100).toFixed(2);
                 return (
                     <div key={letter} className="flex items-center gap-4">
-                        <h2 className="text-gray-300 font-semibold w-4">
-                            {letter}
-                        </h2>
+                        <h2 className="font-semibold w-4">{letter}</h2>
 
-                        <div className="flex-12 h-3 bg-gray-800 rounded-full overflow-hidden">
+                        <div className="flex-12 h-3 bg-gray-600 rounded-full overflow-hidden">
                             <div
-                                className="h-full bg-red-300 rounded-full transition-all duration-500"
+                                className="h-full bg-red-400 rounded-full transition-all duration-500"
                                 style={{ width: `${percentage}%` }}
                             />
                         </div>
 
-                        <div className="text-gray-400 text-right flex-1">
+                        <div className="text-right flex-1">
                             {count}
                             <span className="ml-1">({percentage}%)</span>
                         </div>
