@@ -1,16 +1,34 @@
-# React + Vite
+# Character Counter & Text Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, real-time web application that allows users to analyze their text. It provides instant feedback on character count, word count, sentence count, and even breaks down letter density.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** – UI library
+- **Vite** – Build tool
+- **Zustand** – State management
+- **Tailwind** – Styling
+- **Radix UI** – Accessible UI
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - The latest features for UI management.
+- **Vite** - Next-generation frontend tooling for a fast dev experience.
+- **Zustand** - High-performance, small-footprint state management.
+- **Tailwind CSS 4** - Modern utility-first styling.
+- **Radix UI** - Accessible primitives for high-quality design systems.
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clone the repo:**
+    ```
+    git clone https://github.com/petko-todorov/character-counter.git
+    ```
+2.  **Install packages:**
+    ```
+    npm install
+    ```
+3.  **Start the development server:**
+    ```
+    npm run dev
+    ```
