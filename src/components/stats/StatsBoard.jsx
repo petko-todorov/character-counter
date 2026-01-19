@@ -33,7 +33,7 @@ const StatsBoard = () => {
 
     return (
         <>
-            <div className="flex justify-between">
+            <div className="flex justify-between max-sm:flex-col max-sm:gap-4">
                 <StatCard
                     label="Total Characters"
                     value={totalCharacters}

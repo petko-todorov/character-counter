@@ -8,7 +8,7 @@ import TextInput from './components/TextInput';
 function App() {
     return (
         <>
-            <main className="px-[15%] ">
+            <main className="px-[15%] max-xl:px-[10%] max-sm:px-[5%]">
                 <Header />
 
                 <article className="text-4xl text-center font-semibold pb-6">

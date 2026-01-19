@@ -3,7 +3,7 @@ import { Card, Text } from '@radix-ui/themes';
 const StatCard = ({ label, value, color }) => {
     return (
         <>
-            <Card className={`w-[31%] ${color}`} size="3">
+            <Card className={`w-[31%] max-sm:w-full ${color}`} size="3">
                 <Text as="div" size="7" weight="bold" className="text-black">
                     {value}
                 </Text>
