@@ -35,14 +35,6 @@ A simple, real-time web application that allows users to analyze their text. It 
 
 ## 📸 Preview
 
-Since you have added two screenshots for each mode (likely one for Desktop and one for Mobile/Responsive), it is best to stack them vertically within their respective columns.
-
-To make them look professional, I’ve added a small spacing break (<br>) between the images and adjusted the width to 100% so they fill their table cell properly.
-
-Markdown
-
-## 📸 Preview
-
 <table style="width: 100%; border: none; border-collapse: collapse;">
   <tr>
     <td align="center" style="border: none; vertical-align: top; width: 50%;">
